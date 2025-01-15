@@ -1,0 +1,290 @@
+/* Estilos generales */
+html,body {
+    font-family: 'Roboto', sans-serif; /* Usa la fuente Roboto como predeterminada */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    height: 100%; /* El documento siempre ocupa toda la altura */
+    display: flex;
+    flex-direction: column; /* Organiza el contenido en una columna */
+}
+.content-wrapper {
+    flex: 1; /* Toma todo el espacio disponible entre el header y el footer */
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra el contenido de texto horizontalmente */
+    padding: 2rem;
+    background-color: #1F2642;
+    position: relative; /* Permite posicionar el logo de forma independiente */
+    color: white;
+font-family: 'Roboto', sans-serif; /* Usa la fuente Roboto como predeterminada */
+}
+
+header img {
+    max-width: 150px; /* Controla el ancho máximo */
+    max-height: 100%; /* Asegura que no exceda la altura del contenedor */
+    height: auto; /* Mantiene la proporción del logo */
+    position: absolute; /* Permite posicionarlo independientemente */
+    left: 1rem; /* Alinea el logo a la izquierda */
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center; /* Asegura que el texto esté centrado */
+    flex-grow: 1; /* Hace que el texto ocupe el espacio central */
+font-family: 'Roboto', sans-serif; /* Usa la fuente Roboto como predeterminada */
+}
+
+nav {
+    background-color: #004080; /* Azul más claro */
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+font-family: 'Roboto', sans-serif; /* Usa la fuente Roboto como predeterminada */
+}
+
+.hero-image {
+    background-image: url('imagen-grande.jpg'); /* Ruta de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+    background-position: center; /* Centra la imagen */
+    width: 100%; /* Ocupa todo el ancho */
+    height: 70vh; /* 70% de la altura de la pantalla */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta el punto de anclaje al centro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor visibilidad */
+    padding: 1rem; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados opcionales */
+font-family: 'Roboto', sans-serif; /* Usa la fuente Roboto como predeterminada */
+}
+
+/*Sección Contacto*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto; /* Centrado del formulario */
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Estilos de los campos de texto */
+form input,
+form textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #004080; /* Borde azul cuando el campo está enfocado */
+    box-shadow: 0 0 5px rgba(0, 64, 128, 0.5); /* Sombra cuando el campo está enfocado */
+}
+
+/* Estilos del botón de envío */
+form button {
+    padding: 1rem;
+    background-color: #004080;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #003366; /* Cambia de color al pasar el mouse */
+}
+
+/* Estilos del encabezado y texto */
+#contact h2 {
+    color: #004080; /* Azul para el título */
+    text-align: center;
+}
+
+#contact p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+}
+/* Sección general */
+section {
+    padding: 2rem;
+}
+
+section h2 {
+    color: #004080;
+}
+
+/* Estilos para la categoría de productos */
+.product-category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: white;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #1F2642;
+    color: white;
+    text-align: center;
+    padding: 0.1rem;
+font-family: 'Roboto', sans-serif; /* Usa la fuente Roboto como predeterminada */
+}
+
+#dark-mode-toggle {
+    position: absolute;
+    top: 5.75rem;
+    right: 5rem;
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+font-family: 'Roboto', sans-serif; /* Usa la fuente Roboto como predeterminada */
+}
+
+/* Cambios en modo oscuro */
+body.dark-mode .product-card {
+    border: 1px solid #555; /* Borde más oscuro */
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco para contraste */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Sombra más tenue */
+}
+
+#dark-mode-toggle:hover {
+    background-color: #00264d;
+}
+
+/* Modo claro (por defecto) */
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+body section {
+    background-color: #ffffff;
+    color: #333333;
+}
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode nav {
+    background-color: #333333;
+}
+
+body.dark-mode footer {
+    background-color: #1f1f1f;
+}
+body.dark-mode section {
+    background-color: #1f1f1f;  /* Fondo oscuro para las secciones */
+    color: #ffffff;  /* Texto blanco en secciones */
+}
+
+body.dark-mode button {
+    background-color: #333333;  /* Fondo oscuro en los botones */
+    color: #ffffff;  /* Texto blanco en botones */
+    border: 1px solid #444444;  /* Borde oscuro en botones */
+}
+
+body.dark-mode input, body.dark-mode textarea {
+    background-color: #333333;  /* Fondo oscuro en campos de entrada */
+    color: #ffffff;  /* Texto blanco en campos de entrada */
+    border: 1px solid #444444;  /* Borde oscuro en campos de entrada */
+}
+
+body.dark-mode .whatsapp-button a {
+    background-color: #128c7e;  /* Color verde oscuro para el botón de WhatsApp */
+}
+
+body.dark-mode .whatsapp-button a:hover {
+    background-color: #25d366;  /* Color verde claro al pasar el ratón */
+}
+
+/* Otros elementos adicionales */
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
+    color: #ffffff;  /* Títulos en blanco */
+}
+
+
+/* Estilos para el botón de WhatsApp */
+.whatsapp-button {
+    margin-top: 1rem; /* Reducción del margen superior */
+    text-align: center;
+}
+
+.whatsapp-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25d366; /* Color verde de WhatsApp */
+    color: white;
+    font-size: 1rem;  /* Tamaño de fuente reducido */
+    font-weight: bold;
+    padding: 0.8rem 1.5rem;  /* Menor padding para hacer el botón más pequeño */
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button a:hover {
+    background-color: #128c7e; /* Color verde oscuro de WhatsApp */
+}
+
+.whatsapp-button img {
+    margin-right: 0.5rem;  /* Menor margen entre el icono y el texto */
+    width: 25px;   /* Icono más pequeño */
+    height: 25px;  /* Icono más pequeño */
+}
